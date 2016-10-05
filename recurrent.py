@@ -78,7 +78,7 @@ def gen_data(min_length=MIN_LENGTH, max_length=MAX_LENGTH, n_batch=N_BATCH):
                         np.zeros((n_batch, max_length, 1))],
                        axis=-1)
     #print("x:{}".format(X.shape)) # X:(100, 55, 2)
-    print("x:{}".format(X[1,1,1])) 
+    #print("x:{}".format(X[1,1,1])) 
     mask = np.zeros((n_batch, max_length))
     y = np.zeros((n_batch,))
     # Compute masks and correct values
@@ -170,5 +170,5 @@ def main(num_epochs=NUM_EPOCHS):
         pass
 
 if __name__ == '__main__':
-   # main()
-    X, y, m = gen_data()
+    main()
+    #X, y, m = gen_data()
